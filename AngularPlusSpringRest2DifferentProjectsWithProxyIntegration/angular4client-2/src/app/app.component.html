@@ -1,0 +1,9 @@
+<h2 style="color:blue">My Customers</h2>
+
+<ul class="list-group">
+    <li *ngFor="let cust of customers" class="list-group-item list-group-item-info"
+		[class.selected]="cust === selectedCustomer" (click)="onSelect(cust)">
+		<span style="color:blue">{{cust.id}} - {{cust.firstname}}</span>
+	</li>
+</ul>
+<customer-detail [customer]="selectedCustomer"></customer-detail>

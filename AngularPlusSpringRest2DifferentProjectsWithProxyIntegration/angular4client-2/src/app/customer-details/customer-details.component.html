@@ -1,0 +1,25 @@
+<div *ngIf="customer">
+	<h4>{{customer.firstname}} details!</h4>
+	<div>
+		<label>id: </label>{{customer.id}}
+	</div>
+	<div>
+		<label>First Name: </label>{{customer.firstname}}
+	</div>
+	<div>
+		<label>Last Name: </label>{{customer.lastname}}
+	</div>
+	<div>
+		<label>Age: </label>{{customer.age}}
+	</div>
+	
+	<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-title">{{customer.firstname}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">{{customer.id}}</h6>
+    <p class="card-text">{{customer.lastname}}</p>
+    <a href="#" class="card-link">{{customer.lastname}}</a>
+    <a href="#" class="card-link">{{customer.age}}</a>
+  </div>
+</div>
+</div>
